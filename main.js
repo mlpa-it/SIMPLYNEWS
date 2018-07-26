@@ -15,7 +15,8 @@ window.addEventListener('load', async e => {
 }); 
 
 async function updateSources() {
-    const resp = await fetch(`https://newsapi.org/v2/sources?country=au&apiKey=${apiKey}`);
+//    const resp = await fetch(`https://newsapi.org/v2/sources?country=au&apiKey=${apiKey}`);
+    const resp = await fetch(`https://newsapi.org/v2/sources?apiKey=${apiKey}`);
     const json = await resp.json(); 
 
     sourceSelector.innerHTML = json.sources.map(src => `<option value="${src.id}">${src.name}</option>`).join('\n ');
@@ -40,3 +41,4 @@ function createArticle(article){
      </center>
     `;
 }
+
