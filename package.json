@@ -9,6 +9,6 @@
     "author": "MLPA",
     "license": "UNCLICENCED",
     "dependencies": {
-      "jquery": "1.1.1"
+      "jquery": "3.0.0"
     }
 }
