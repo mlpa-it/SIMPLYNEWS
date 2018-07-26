@@ -7,7 +7,7 @@ window.addEventListener('load', e => {
 }); 
 
 async function updateNews() {
-    const resp = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`);
+    const resp = await fetch(`https://newsapi.org/v2/top-headlines?sources=associated-press&apiKey=${apiKey}`);
     const json = await resp.json();
     
     main.innerHTML = json.articles.map(createArticle).join('\n ');
@@ -19,7 +19,7 @@ function createArticle(article){
      <a href="${article.url}">
       <h2>${article.title}</h2>
       <img src="${article.urlToImage}">
-      <p>${article.description}</p>
+      <p></p>
      </a>
      </div>
     `;
