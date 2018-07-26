@@ -1,2 +1,2 @@
 # news
-News app - experimental dev app
+News app - experimental demo app
