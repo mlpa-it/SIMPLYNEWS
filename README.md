@@ -1,2 +1,2 @@
-# news
-News app - experimental demo app
+# NEWS
+News - PWA demo app
